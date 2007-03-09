@@ -1,4 +1,6 @@
+# TODO: optflags
 Summary:	R1CHs Enhanced Quake II Client/Server
+Summary(pl.UTF-8):	Klient/serwer R1CHs Enchanced Quake II
 Name:		r1q2
 Version:	7187
 Release:	0.1
@@ -16,6 +18,13 @@ embedded MP3 players and other "gimmick" features, R1Q2 is focused on
 providing stability, security and speed whilst remaining fully
 compatible with existing mods and other clients.
 
+%description -l pl.UTF-8
+R1Q2 to rozszerzony klient/serwer gry Quake II. Oparty jest na kodzie
+źródłowym id Software w wersji 3.21. Zamiast na ladnej grafice,
+wbudowanych odtwarzaczach MP3 i innych tego typu elementach skupia się
+na stabilności, bezpieczeństwie i szybkości przy zachowaniu pełnej
+kompatybilności z istniejącymi modami i innymi klientami.
+
 %prep
 %setup -qc
 
@@ -25,6 +34,7 @@ compatible with existing mods and other clients.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
