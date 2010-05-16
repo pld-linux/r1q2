@@ -9,6 +9,7 @@ Group:		X11/Applications/Games
 Source0:	http://www.r1ch.net/stuff/r1q2/src/%{name}-b%{version}-src.zip
 # Source0-md5:	66669adc5a114387e3eb6c3baa661ec2
 URL:		http://www.r1ch.net/stuff/r1q2/
+BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
